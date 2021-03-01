@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --black: #130f0d;
+  --primary: #fd951f;
+  --primary-dark: #dd7b0c;
+  --secondary: #fd391f;
+  --secondary-dark: #b12614;
+  --white: #f0f0f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  background-color: var(--black);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+main {
+  margin: auto;
+
+  width: 90vw;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #201916; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3f2405; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(68, 40, 40); 
+}
+
+a {
+  width: 100%;
+  height: 60px;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  padding: 0.6rem;
+
+  display: block;
+
+  text-align: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.0rem;
+  color: var(--white);
+
+  border: none;
+  background: var(--primary);
+}
+
+a:hover {
+  background: var(--primary-dark);
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  position: relative;
+  object-fit: cover;
+}
+
+button {
+  width: 130px;
+  height: 50px;
+
+  padding: auto 10px;
+
+  color: var(--white);
+  background: var(--secondary);
+
+  text-transform: uppercase;
+
+  right: 110px;
+  bottom: 60px;
+  position: fixed;
+
+  border: none;
+
+  outline: none;
+
+  transition: .4s;
+}
+
+button:hover {
+  background: var(--secondary-dark);
+}
+
+.grid {
+  width: 100%;
+
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: auto auto auto auto;
+
+  position: absolute;
+
+  margin: auto;
+}
+
+.imgs {
+  width: 400px;
+  height: 400px;
+}
+
+.delete {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  position: relative;
+}
+
+span {
+  width: 25px;
+  height: 25px;
+
+  padding: 2px;
+
+  top: 8px;
+  left: 8px;
+
+  border-radius: 25%;
+
+  color: var(--white);
+  background-color: var(--secondary);
+
+  text-align: center;
+
+  position: absolute;
+
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* .delete::after {
+  width: 25px;
+  height: 25px;
+
+  text-align: center;
+
+  content: 'x';
+  color: var(--white);
+
+  background-color: var(--secondary);
+  border-radius: 25%;
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+} */
